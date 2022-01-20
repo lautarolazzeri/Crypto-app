@@ -7,7 +7,7 @@ import { useGetCryptosQuery } from '../services/cryptoApi';
 import Cryptocurrencies from './Cryptocurrencies';
 import News from './News';
 import Loader from './Loader';
-
+import styles from '../App.css';
 const { Title } = Typography;
 
 const Homepage = () => {
@@ -40,5 +40,6 @@ const Homepage = () => {
     </>
   );
 };
+
 
 export default Homepage;
