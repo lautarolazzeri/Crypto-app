@@ -2,14 +2,12 @@ import React from 'react';
 import millify from 'millify';
 import { Typography, Row, Col, Statistic } from 'antd';
 import { Link } from 'react-router-dom';
-
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import Cryptocurrencies from './Cryptocurrencies';
 import News from './News';
 import Loader from './Loader';
-import styles from '../App.css';
-const { Title } = Typography;
 
+const { Title } = Typography;
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
@@ -40,6 +38,5 @@ const Homepage = () => {
     </>
   );
 };
-
 
 export default Homepage;
